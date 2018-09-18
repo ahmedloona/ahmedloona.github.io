@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 0.25em;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  color: darkGray;
+  height: 90vh;
+  min-width: 900px;
+  min-height: 400px;
+}
+
+body * {
+  border: 0.5px solid lightGray;
+}
+
+header {
+  height: 10%;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  font-family: 'Baloo Tammudu', cursive;
+  letter-spacing: 0.25em;
+  word-spacing: 1.5emem;
+}
+
+main {
+  height: 20%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(0, 1fr);
+  grid-gap: 20px;
+}
+
+div > p {
+  padding-top: 1.5em;
+  border-radius: 20px;
+}
+
+footer {
+  height: 10%;
+}
+
+.project {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 10%;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-in;
+}
+
+.project:hover, .project:focus {
+  transform: scale(1.15);
+  border: solid 5px darkGray;
+}
+
+a{
+  text-decoration: none;
+}
+
+.caption {
+  background-color: hsla(20, 10%, 30%, 0.4);
+  margin-top: 35%;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+
+#android_logo {
+  background-image: url('../images/android_logo.png');
+}
+
+#google {
+  background-image: url('../images/google.png');
+}
+
+#rock_paper_scissors {
+  background-image: url('../images/rock_paper_scissors.png');
+}
+
+#drum_kit {
+  background-image: url('../images/drum_kit.png');
+}
